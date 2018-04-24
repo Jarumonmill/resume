@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+.menu {
+    display: none;
+}
+
+
+</style>
+
+<body class=" w3-pale-red">
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:2px;">
+
+    <a href="#home" class="w3-bar-item w3-button">MADAMMILL<img class="w3-image" src="mai.jpg" alt="Fashion Blog" width="30" height="20"></a>
+    <!-- Navigation bar with social media icons -->
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+      <a href="#about me" class="w3-bar-item w3-button"><i class="fa fa-user">About Me</i></a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope">Contact</i></a>
+
+      <div class="w3-dropdown-hover w3-hide-small">
+              <button class="w3-button" title="More"><i class="fa fa-book ">Story</i> <i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="file:///C:/Users/5910513048/Desktop/teampage/story1.html" class="w3-bar-item w3-button">Story 1</a>
+                <a href="file:///C:/Users/5910513048/Desktop/teampage/story2.html" class="w3-bar-item w3-button">Story 2</a>
+                <a href="#" class="w3-bar-item w3-button">Story 3</a>
+                <a href="#" class="w3-bar-item w3-button">Story 4</a>
+              </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">STORY <i class="fa fa-caret-down "></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="file:///C:/Users/5910513048/Desktop/projectteam/story1.html" class="w3-bar-item w3-button">story1</a>
+        <a href="file:///C:/Users/5910513048/Desktop/projectteam/story2.html" class="w3-bar-item w3-button">story2</a>
+        <a href="#" class="w3-bar-item w3-button">story3</a></div>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope">Contact</i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<!-- Image header -->
+<header class="w3-display-container w3-wide" id="home">
+  <img class="w3-image" src="hu.jpg" alt="Fashion Blog" width="1600" height="1060">
+  <div class="w3-display-left w3-padding-large">
+
+    <h1 class="w3-jumbo w3-text-pale-red w3-hide-small"><b></b></h1>
+
+      
+  </div>
+</header>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+
+
+  <!-- About Section -->
+
+  <div class="w3-container  w3-padding-64 w3-white w3-center w3-wide" id="about me">
+    <div class="w3-content" style="max-width:2100px">
+      <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ABOUT ME</span></h2>
+
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Mama');" id="myLink">
+          <div class="w3-col s6 tablink">Mama</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Mill');">
+          <div class="w3-col s6 tablink">Mill</div>
+        </a>
+      </div>
+
+      <div id="Mama" class="w3-container menu w3-padding-48 w3-card">
+        <img class="w3-image" src="na.jpg" alt="Fashion Blog" width="1600" height="1060">
+
+      </div>
+
+      <div id="Mill" class="w3-container menu w3-padding-48 w3-card">
+        <img class="w3-image" src="nana.jpg" alt="Fashion Blog" width="1600" height="1060">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+  <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h2> <br>
+
+      <p>Lets get in touch and talk about your next project.</p>
+      <form action="/action_page.php" target="_blank">
+        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+</button>
+      </form>
+    </div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+<div class="w3-white w3-margin">
+  <div class="w3-container w3-padding w3-center w3-white">
+    <h4>Follow Me</h4>
+  </div>
+  <div class="w3-container w3-padding w3-center w3-white">
+  <div class="w3-container w3-xlarge w3-padding">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</div>
+<hr>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32">
+   <a href="#" class="w3-button w3-gray w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+}</script>
+</script>
+
+</body>
+</html>
